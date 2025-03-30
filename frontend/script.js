@@ -6,22 +6,22 @@ document.addEventListener("DOMContentLoaded", function () {
         { name: "Service 6", url: "http://localhost:5006/api" }
     ];
 
-    const list = document.getElementById("services-list");
+  const list = document.getElementById("services-list");
 
-    services.forEach(service => {
-        fetch(service.url)
-            .then(response => response.json())
-            .then(data => {
-                const li = document.createElement("li");
-                li.innerHTML = `<strong>${service.name}:</strong> ${data.message}`;
-                list.appendChild(li);
-            })
-            .catch(error => {
-                console.error("Error connecting to the service:", service.name, error);
-                const li = document.createElement("li");
-                li.innerHTML = `<strong>${service.name}:</strong> ❌ Not available`;
-                li.style.color = "red";
-                list.appendChild(li);
-            });
-    });
+  services.forEach((service) => {
+    fetch(service.url)
+      .then((response) => response.json())
+      .then((data) => {
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${service.name}:</strong> ${data.message}`;
+        list.appendChild(li);
+      })
+      .catch((error) => {
+        console.error("Error connecting to the service:", service.name, error);
+        const li = document.createElement("li");
+        li.innerHTML = `<strong>${service.name}:</strong> ❌ Not available`;
+        li.style.color = "red";
+        list.appendChild(li);
+      });
+  });
 });

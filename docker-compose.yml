@@ -8,8 +8,13 @@ services:
     build: ./service1Alexander2510017
     ports:
       - "5001:5001"
+
+  service3:
+    build: ./service3carlos
+    ports:
+      - "5003:5003"
+      
   service6:
     build: ./service6JojhanC2510038
     ports:
       - "5006:5006"
-
