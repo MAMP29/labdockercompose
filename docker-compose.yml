@@ -9,4 +9,7 @@ services:
     ports:
       - "5001:5001"
 
-
+  service3carlos:
+    build: ./service3carlos
+    ports:
+      - "5003:5003"
