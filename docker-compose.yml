@@ -19,6 +19,11 @@ services:
     ports:
       - "5006:5006"
 
+  service9:
+    build: ./service9Miguel2274590
+    ports:
+      - "5009:5009"
+
   service10:
     build: ./service10Ricardo2242117
     ports:
