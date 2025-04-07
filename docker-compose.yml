@@ -1,0 +1,46 @@
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "8080:80"
+
+  service1:
+    build: ./service1Alexander2510017
+    ports:
+      - "5001:5001"
+  
+  service2:
+    build: ./service2Anderson1841610
+    ports:
+      - "5002:5002"
+      
+  service3:
+    build: ./service3carlos
+    ports:
+      - "5003:5003"
+      
+  service6:
+    build: ./service6JojhanC2510038
+    ports:
+      - "5006:5006"
+
+  service7:
+    build: ./service7JoseF2224623
+    ports:
+      - "5007:5007"
+
+  service8:
+    build: ./service8Johhan2222825
+    ports:
+      - "5008:5008"
+
+  service9:
+    build: ./service9Miguel2274590
+    ports:
+      - "5009:5009"
+
+  service10:
+    build: ./service10Ricardo2242117
+    ports:
+      - "5010:5010"
+
